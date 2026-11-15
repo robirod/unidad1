@@ -1,10 +1,4 @@
-/* ==========================================================================
-   Reserva de Horas - Estilos Modernos y Responsivos
-   Paleta: Fondo Blanco con Celeste, Textos Oscuros de Alta Legibilidad
-   ========================================================================== */
-
 :root {
-    /* Paleta Principal: Blanco, Celeste y Acentos Clínicos */
     --bg-page: #f0f7fc;
     --bg-card: #ffffff;
     --bg-header: linear-gradient(135deg, #52cbff 0%, #38bdf8 100%);
@@ -12,7 +6,6 @@
     --bg-input: #ffffff;
     --bg-icon: #f1f5f9;
 
-    /* Bordes */
     --border-card: #e2e8f0;
     --border-subtle: #e2e8f0;
     --border-input: #cbd5e1;
@@ -20,19 +13,16 @@
     --border-focus: #0284c7;
     --ring-focus: rgba(2, 132, 199, 0.18);
     
-    /* Tipografía y Textos Oscuros */
-    --text-primary: #0f172a;        /* Texto principal oscuro */
-    --text-secondary: #1e293b;      /* Etiquetas oscuras legibles */
-    --text-muted: #64748b;          /* Textos secundarios */
-    --text-placeholder: #94a3b8;    /* Placeholders suaves */
+    --text-primary: #0f172a;
+    --text-secondary: #1e293b;
+    --text-muted: #64748b;
+    --text-placeholder: #94a3b8;
 
-    /* Colores de Marca y Botón */
     --primary-color: #0284c7;
     --primary-hover: #0369a1;
     --primary-gradient: linear-gradient(135deg, #0284c7 0%, #0ea5e9 100%);
     --primary-gradient-hover: linear-gradient(135deg, #0369a1 0%, #0284c7 100%);
     
-    /* Estados de Alerta */
     --success-bg: #ecfdf5;
     --success-border: #10b981;
     --success-text: #065f46;
@@ -41,7 +31,6 @@
     --error-border: #ef4444;
     --error-text: #991b1b;
 
-    /* Dimensiones y Sombras */
     --radius-sm: 8px;
     --radius-md: 10px;
     --radius-lg: 16px;
@@ -50,7 +39,6 @@
     --shadow-input: 0 1px 3px rgba(0, 0, 0, 0.04);
 }
 
-/* Reset básico */
 *, *::before, *::after {
     box-sizing: border-box;
     margin: 0;
@@ -79,7 +67,6 @@ body {
     margin: 0 auto;
 }
 
-/* Tarjeta Principal */
 .card-container {
     background-color: var(--bg-card);
     border: 1px solid var(--border-card);
@@ -90,7 +77,6 @@ body {
     flex-direction: column;
 }
 
-/* Encabezado: Fondo Celeste con Bloques Blancos Destacados */
 .card-header {
     display: grid;
     grid-template-columns: 190px 1fr;
@@ -100,7 +86,6 @@ body {
     border-bottom: 1px solid rgba(0, 0, 0, 0.06);
 }
 
-/* Bloque Logo */
 .logo-box {
     display: flex;
     align-items: center;
@@ -145,7 +130,6 @@ body {
     letter-spacing: 0.5px;
 }
 
-/* Bloque Título */
 .title-box {
     display: flex;
     flex-direction: column;
@@ -172,7 +156,6 @@ body {
     font-weight: 500;
 }
 
-/* Formulario */
 .card-form {
     padding: 26px 28px;
     display: flex;
@@ -181,7 +164,6 @@ body {
     background-color: var(--bg-card);
 }
 
-/* Filas y Columnas */
 .form-row.two-cols {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -203,7 +185,6 @@ body {
     text-transform: uppercase;
 }
 
-/* Envoltorio de los inputs: Fondo blanco, bordes definidos y suaves */
 .input-wrapper {
     position: relative;
     display: flex;
@@ -225,7 +206,6 @@ body {
     box-shadow: 0 0 0 3px var(--ring-focus);
 }
 
-/* Contenedor de iconos */
 .icon-container {
     display: flex;
     align-items: center;
@@ -241,10 +221,8 @@ body {
     width: 20px;
     height: 20px;
     opacity: 0.85;
-    /* Mantiene los tonos originales oscuros de los SVG */
 }
 
-/* Prefijo de teléfono (+56 9) */
 .has-prefix .input-prefix {
     font-size: 0.9rem;
     font-weight: 700;
@@ -254,7 +232,7 @@ body {
     user-select: none;
 }
 
-/* Campos de entrada: Texto oscuro y nítido */
+
 input[type="text"],
 input[type="tel"],
 input[type="date"],
@@ -276,7 +254,6 @@ input::placeholder {
     font-weight: 400;
 }
 
-/* Select de especialidades */
 select {
     cursor: pointer;
     appearance: none;
@@ -294,7 +271,6 @@ select option {
     padding: 10px;
 }
 
-/* Calendario / Date picker */
 input[type="date"]::-webkit-calendar-picker-indicator {
     cursor: pointer;
     opacity: 0.65;
@@ -305,7 +281,6 @@ input[type="date"]::-webkit-calendar-picker-indicator:hover {
     opacity: 1;
 }
 
-/* Fila de acción con el botón Enviar */
 .action-row {
     align-items: flex-end;
 }
@@ -314,7 +289,6 @@ input[type="date"]::-webkit-calendar-picker-indicator:hover {
     justify-content: flex-end;
 }
 
-/* Botón Enviar con Degradado Celeste / Azul */
 .btn-primary {
     height: 48px;
     width: 100%;
@@ -362,7 +336,6 @@ input[type="date"]::-webkit-calendar-picker-indicator:hover {
     transform: translateX(3px);
 }
 
-/* Mensajes de Estado */
 .status-message {
     padding: 12px 16px;
     border-radius: var(--radius-sm);
@@ -389,18 +362,73 @@ input[type="date"]::-webkit-calendar-picker-indicator:hover {
     to { opacity: 1; transform: translateY(0); }
 }
 
-/* Pie de página (Footer) */
 .card-footer {
     border-top: 1px solid var(--border-card);
     background: #f8fafc;
-    padding: 18px 24px;
+    padding: 20px 24px;
     text-align: center;
 }
 
 .footer-content {
     display: flex;
     flex-direction: column;
-    gap: 4px;
+    gap: 8px;
+}
+
+.service-status {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2px;
+}
+
+.status-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    padding: 4px 14px;
+    border-radius: 9999px;
+    font-size: 0.76rem;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+    text-transform: uppercase;
+}
+
+.status-badge.green {
+    background-color: #ecfdf5;
+    border: 1px solid #a7f3d0;
+    color: #065f46;
+}
+
+.status-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #10b981;
+    display: inline-block;
+    box-shadow: 0 0 0 2px rgba(16, 185, 129, 0.25);
+    animation: pulseDot 2s infinite ease-in-out;
+}
+
+@keyframes pulseDot {
+    0%, 100% {
+        transform: scale(1);
+        box-shadow: 0 0 0 2px rgba(16, 185, 129, 0.25);
+    }
+    50% {
+        transform: scale(1.2);
+        box-shadow: 0 0 0 5px rgba(16, 185, 129, 0.15);
+    }
+}
+
+.card-footer .schedule-info {
+    font-size: 0.78rem;
+    color: var(--text-secondary);
+    font-weight: 500;
+}
+
+.card-footer .schedule-info strong {
+    color: var(--text-primary);
+    font-weight: 700;
 }
 
 .card-footer .copyright {
@@ -426,7 +454,6 @@ input[type="date"]::-webkit-calendar-picker-indicator:hover {
     color: var(--primary-hover);
 }
 
-/* Accesibilidad */
 .sr-only {
     position: absolute;
     width: 1px;
@@ -439,7 +466,6 @@ input[type="date"]::-webkit-calendar-picker-indicator:hover {
     border: 0;
 }
 
-/* Adaptabilidad Responsiva */
 @media (max-width: 600px) {
     body {
         padding: 14px 10px;
